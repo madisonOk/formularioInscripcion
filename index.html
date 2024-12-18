@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Consulta</title>
+
+    <link rel="icon" type="image/png" href="https://cdn.bitrix24.es/b15495391/resize_cache/585185/047e4a127947eff3c7d861cc2f113186/landing/9bb/9bb8e2dd29ca43a136de779f794d27a5/32x32.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.bitrix24.es/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            font-family: 'Source Serif Pro', serif; /* Fuente Source Serif Pro */
+            background-image: url('https://cdn.bitrix24.es/b15495391/landing/2ec/2ecc046a136783f8eca8ba1c2946a5ac/MADOK-Portada_2x.webp'); /* Reemplaza con tu imagen */
+            background-size: cover;
+            background-repeat: no-repeat; /* Evita que la imagen se duplique */
+            background-position: center;
+            height: 100vh;
+            font-family: Barlow;
+            margin: 0;
+            overflow: hidden;
+            background-attachment: fixed; /* Fija la imagen de fondo */
+        }
+        .floating-form {
+            background-color: white;
+            padding: 4rem 5rem 4rem 5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .floating-form img {
+            max-width: 170px;
+            margin-bottom: 1rem;
+        }
+
+        .floating-form h1 {
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 40px;
+        }
+
+        .btn {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 35px 55px 35px 55px;
+            transition: background-color 0.3s, box-shadow 0.3s;
+            font-size: 20px;
+        }
+        .btn-primary {
+            background-color: #6a0dad; /* Morado oscuro */
+            color: white;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #520a88; /* Morado más oscuro */
+        }
+
+        .btn-secondary {
+            background-color: #d81b60; /* Rosa oscuro */
+            color: white;
+            border: none;
+        }
+
+        .btn-secondary:hover {
+            background-color: #a01448; /* Rosa más intenso */
+        }
+
+        .btn:hover {
+            background-color: #0056b3; /* Cambia el color según el botón */
+            color: white;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 576px) {
+            .button-group {
+                flex-direction: column;
+            }
+            .btn {
+                padding: 35px 40px 35px 40px;
+            }
+        }
+
+        /* SweetAlert custom styles */
+       .swal2-confirm {
+           background-color: #007bff !important; /* Azul bootstrap */
+           color: white !important;
+           border: none;
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       }
+
+       .swal2-cancel {
+           background-color: #6c757d !important; /* Gris bootstrap */
+           color: white !important;
+           border: none;
+           box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+       }
+
+       .swal2-confirm:hover {
+           background-color: #0056b3 !important;
+       }
+
+       .swal2-cancel:hover {
+           background-color: #5a6268 !important;
+       }
+    </style>
+</head>
+<body>
+  <div class="floating-form">
+       <img src="https://cdn.bitrix24.es/b15495391/disk/2f5/2f5f8362bce1af0249a76334df5eb848/cf5c635dc866524b2cb00589bf76fe1e" alt="Logo"> <!-- Reemplaza con tu logo -->
+       <h2>Inscribete a Madison Ok</h2> <br> <span></span>
+       <div class="button-group">
+           <button type="button" onclick="window.location.href='https://www.tu-pagina-deseada.com'" class="btn btn-primary">
+           Soy Alumno de JVN o Fundación Pachacutéc </button>
+           <button type="button" id="button2" onclick="window.location.href='https://www.tu-pagina-deseada.com'" class="btn btn-secondary">
+             Soy Alumno de Blackwell Global University </button>
+       </div>
+   </div>
+</body>
+</html>
