@@ -91,14 +91,22 @@
 
        /* Botón 3: Degradado Verde */
         .btn-tertiary {
-            background: linear-gradient(45deg, #32cd32, #228b22); /* Degradado Verde */
+            background: linear-gradient(45deg, #99c946, #6b8e23); /* Degradado Verde */
             color: #ffffff; /* Texto blanco para mejor contraste */
+            border: none;
+            font-weight: bold;
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px; /* Bordes redondeados */
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out; /* Suaviza la transición de hover */
         }
         
         .btn-tertiary:hover {
-            background: linear-gradient(45deg, #2e8b57, #006400); /* Degradado más oscuro al pasar el cursor */
-            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            background: linear-gradient(45deg, #6b8e23, #556b2f); /* Degradado más oscuro al pasar el cursor */
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra */
             color: #ffffff; /* Texto blanco para mejor contraste */
+            transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
         }
 
         @media (max-width: 576px) {
