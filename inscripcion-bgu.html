@@ -14,14 +14,13 @@
             background-size: cover;
             background-repeat: no-repeat; /* Evita que la imagen se duplique */
             background-position: center;
-            height: 100vh;
             font-family: Barlow;
             margin: 0;
-            overflow: hidden; /* Evita el scroll */
+            overflow-y: auto; /* Evita el scroll */
             background-attachment: fixed;
         }
         .form-container {
-            position: absolute; /* Para poder centrar usando top y left */
+            margin: 2rem auto; /* Añade espacio arriba y abajo */
             top: 50%; /* Centrado vertical */
             left: 50%; /* Centrado horizontal */
             transform: translate(-50%, -50%); /* Ajusta el punto de referencia al centro */
