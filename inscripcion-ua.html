@@ -14,17 +14,12 @@
             background-size: cover;
             background-repeat: no-repeat; /* Evita que la imagen se duplique */
             background-position: center;
-            height: 100vh;
             font-family: Barlow;
             margin: 0;
-            overflow: hidden; /* Evita el scroll */
-            background-attachment: fixed;
+            overflow-y: auto; /* Evita el scroll */
         }
         .form-container {
-            position: absolute; /* Para poder centrar usando top y left */
-            top: 50%; /* Centrado vertical */
-            left: 50%; /* Centrado horizontal */
-            transform: translate(-50%, -50%); /* Ajusta el punto de referencia al centro */
+            margin: 2rem auto; /* Añade espacio arriba y abajo */
             width: 90%;
             max-width: 800px;
             background: #ffffff;
@@ -70,6 +65,7 @@
             <!-- Espacio para el logo -->
             <img src="https://cdn.bitrix24.es/b15495391/disk/2f5/2f5f8362bce1af0249a76334df5eb848/cf5c635dc866524b2cb00589bf76fe1e" alt="Logo Institucional">
             <h2>Formulario de Inscripción</h2>
+            <br><span>🎉 Para continuar con tu inscripción, te pedimos que completes tus datos con precisión. <br> ¡Estamos emocionados de tenerte con nosotros! 😊</span>
             <hr>
         </div>
 
