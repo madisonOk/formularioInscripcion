@@ -54,9 +54,12 @@
 
         .btn {
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 35px 55px 35px 55px;
+            padding: 35px 50px 35px 50px;
             transition: background-color 0.3s, box-shadow 0.3s;
-            font-size: 20px;
+            font-size: 20px;            
+            color: white;
+            border: none;
+            border-radius: 8px;
         }
         .btn-primary {
             background-color: #6a0dad; /* Morado oscuro */
@@ -66,6 +69,7 @@
 
         .btn-primary:hover {
             background-color: #520a88; /* Morado más oscuro */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
         }
 
         .btn-secondary {
@@ -76,11 +80,16 @@
 
         .btn-secondary:hover {
             background-color: #a01448; /* Rosa más intenso */
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
         }
 
-        .btn:hover {
-            background-color: #0056b3; /* Cambia el color según el botón */
-            color: white;
+        /* Botón 3: Degradado Verde a Amarillo */
+        .btn-tertiary {
+            background: linear-gradient(45deg, #32cd32, #ffd700); /* Degradado */
+        }
+
+        .btn-tertiary:hover {
+            background: linear-gradient(45deg, #228b22, #daa520); /* Degradado al pasar el cursor */
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
         }
 
@@ -126,7 +135,7 @@
            Soy Alumno de JVN o Fundación Pachacutéc </button>
            <button type="button" id="button2" onclick="window.location.href='https://madisonok.github.io/formularioInscripcion/inscripcion-bgu.html'" class="btn btn-secondary">
              Soy Alumno de Blackwell Global University </button>
-           <button type="button" id="button2" onclick="window.location.href='https://madisonok.github.io/formularioInscripcion/inscripcion-bgu.html'" class="btn btn-secondary">
+           <button type="button" id="button2" onclick="window.location.href='https://madisonok.github.io/formularioInscripcion/inscripcion-ua.html'" class="btn btn-secondary">
              Soy Alumno de la Universidad Autónoma de Chile </button>
        </div>
    </div>
