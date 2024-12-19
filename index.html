@@ -58,12 +58,12 @@
             width: 100%; /* Botones más horizontales */
             max-width: 600px; /* Define un ancho máximo */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 35px 20px;
+            padding: 20px;
             transition: background-color 0.3s, box-shadow 0.3s;
             font-size: 18px; /* Tamaño de la fuente */
             text-align: center; /* Centra el texto */         
             color: white;
-            font-weight:400px;
+            font-weight:500;
             border: none;
             border-radius: 8px;
             margin: 0 auto; /* Centra los botones */
@@ -72,7 +72,6 @@
             background-color: #6a0dad; /* Morado oscuro */
             color: white;
             border: none;
-            font-size: 1rem;
             cursor: pointer;
             transition: all 0.3s ease-in-out; /* Suaviza la transición de hover */            
         }
@@ -88,7 +87,6 @@
             background-color: #d81b60; /* Rosa oscuro */
             color: white;
             border: none;
-            font-size: 1rem;
             cursor: pointer;
             transition: all 0.3s ease-in-out; /* Suaviza la transición de hover */
         }
@@ -104,7 +102,6 @@
         .btn-tertiary {
             background: linear-gradient(45deg, #99c946, #6b8e23); /* Degradado Verde */
             color: #ffffff; /* Texto blanco para mejor contraste */
-            font-size: 1rem;
             cursor: pointer;
             transition: all 0.3s ease-in-out; /* Suaviza la transición de hover */
         }
@@ -114,6 +111,20 @@
             box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra */
             color: #ffffff; /* Texto blanco para mejor contraste */
             transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+        }
+
+        .btn-quaternary {
+            background-color: #007bff; /* Azul */
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn-quaternary:hover {
+            background-color: #0056b3;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.05);
         }
 
         @media (max-width: 576px) {
@@ -154,6 +165,8 @@
        <img src="https://cdn.bitrix24.es/b15495391/disk/2f5/2f5f8362bce1af0249a76334df5eb848/cf5c635dc866524b2cb00589bf76fe1e" alt="Logo"> <!-- Reemplaza con tu logo -->
        <h2>Inscríbete a Madison Ok</h2> <br> <span></span>
        <div class="button-group">
+           <button type="button" onclick="window.location.href='https://madisonok.github.io/formularioInscripcion/inscripcion-externa.html'" class="btn btn-quaternary">
+               Nuevo botón </button>
            <button type="button" onclick="window.location.href='https://madisonok.github.io/formularioInscripcion/inscripcion.html'" class="btn btn-primary">
            Soy Alumno de JVN o Fundación Pachacutéc </button>
            <button type="button" id="button2" onclick="window.location.href='https://madisonok.github.io/formularioInscripcion/inscripcion-bgu.html'" class="btn btn-secondary">
