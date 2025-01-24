@@ -11,15 +11,13 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <style>
         body {
-            font-family: 'Source Serif Pro', serif; /* Fuente Source Serif Pro */
-            background-image: url('https://cdn.bitrix24.es/b15495391/landing/2ec/2ecc046a136783f8eca8ba1c2946a5ac/MADOK-Portada_2x.webp'); /* Reemplaza con tu imagen */
+            font-family: 'Source Serif Pro', serif;
+            background-image: url('https://cdn.bitrix24.es/b15495391/landing/2ec/2ecc046a136783f8eca8ba1c2946a5ac/MADOK-Portada_2x.webp');
             background-size: cover;
-            background-repeat: no-repeat; /* Evita que la imagen se duplique */
+            background-repeat: no-repeat;
             background-position: center;
-            height: 100vh;
-            font-family: Barlow;
             margin: 0;
-            overflow: hidden;
+            font-family: Barlow;
         }
         .floating-form {
             background-color: white;
@@ -27,14 +25,11 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
-            top: 50%;
-            left: 50%;
             margin: 20px auto; /* Para centrar en dispositivos pequeños */
-            transform: translate(-50%, -50%);
-            max-width: 1200px; /* Define un ancho máximo */
-            width: 90%; /* Ocupar el 90% del ancho de la pantalla */
+            max-width: 1200px;
+            width: 90%;
         }
-
+    
         .floating-form img {
             max-width: 170px;
             margin-bottom: 1rem;
@@ -48,27 +43,22 @@
 
         .button-group {
             display: flex;
-            justify-content: center;
+            flex-direction: column; /* Ajusta para pantallas pequeñas */
             gap: 1rem;
-            margin-top: 40px;
         }
-
+    
         .btn {
-            width: 100%; /* Botones más horizontales */
-            max-width: 700px; /* Define un ancho máximo */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 20px 30px;
+            padding: 15px 30px;
             transition: background-color 0.3s, box-shadow 0.3s;
-            font-size: 18px; /* Tamaño de la fuente */
-            text-align: center; /* Centra el texto */         
+            font-size: 16px;
             color: white;
-            font-weight:400;
+            font-weight: 400;
             border: none;
             border-radius: 8px;
-            margin: 0 auto; /* Centra los botones */
-            line-height: 1.15; /* Reduce el espacio entre líneas */
+            text-align: center;
         }
-        .btn-primary {
+            .btn-primary {
             background-color: #6a0dad; /* Morado oscuro */
             color: white;
             border: none;
