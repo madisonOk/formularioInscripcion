@@ -16,8 +16,11 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            margin: 0;
+            height: 100vh;
             font-family: Barlow;
+            margin: 0;
+            overflow: hidden;
+            background-attachment: fixed; /* Mantener para escritorio */
         }
         .floating-form {
             background-color: white;
@@ -25,7 +28,10 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             text-align: center;
-            margin: 20px auto; /* Para centrar en dispositivos pequeños */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             max-width: 1200px;
             width: 90%;
         }
@@ -34,96 +40,112 @@
             max-width: 170px;
             margin-bottom: 1rem;
         }
-
+    
         .floating-form h1 {
             margin-bottom: 1.5rem;
             font-size: 1.8rem;
             font-weight: bold;
         }
-
+    
         .button-group {
             display: flex;
-            flex-direction: column; /* Ajusta para pantallas pequeñas */
+            justify-content: center;
             gap: 1rem;
+            margin-top: 40px;
         }
     
         .btn {
+            width: 100%;
+            max-width: 700px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            padding: 15px 30px;
+            padding: 20px 30px;
             transition: background-color 0.3s, box-shadow 0.3s;
-            font-size: 16px;
+            font-size: 18px;
+            text-align: center;
             color: white;
             font-weight: 400;
             border: none;
             border-radius: 8px;
-            text-align: center;
+            margin: 0 auto;
+            line-height: 1.15;
         }
-            .btn-primary {
-            background-color: #6a0dad; /* Morado oscuro */
+    
+        .btn-primary {
+            background-color: #6a0dad;
             color: white;
             border: none;
             cursor: pointer;
-            transition: all 0.3s ease-in-out; /* Suaviza la transición de hover */            
+            transition: all 0.3s ease-in-out;
         }
-
+    
         .btn-primary:hover {
-            background-color: #520a88; /* Morado más oscuro */
+            background-color: #520a88;
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-            color: #ffffff; /* Texto blanco para mejor contraste */
-            transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+            transform: scale(1.05);
         }
-
+    
         .btn-secondary {
-            background-color: #d81b60; /* Rosa oscuro */
+            background-color: #d81b60;
             color: white;
             border: none;
             cursor: pointer;
-            transition: all 0.3s ease-in-out; /* Suaviza la transición de hover */
+            transition: all 0.3s ease-in-out;
         }
-
+    
         .btn-secondary:hover {
-            background-color: #a01448; /* Rosa más intenso */
+            background-color: #a01448;
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-            color: #ffffff; /* Texto blanco para mejor contraste */
-            transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+            transform: scale(1.05);
         }
-
-       /* Botón 3: Degradado Verde */
+    
         .btn-tertiary {
-            background: linear-gradient(45deg, #99c946, #6b8e23); /* Degradado Verde */
-            color: #ffffff; /* Texto blanco para mejor contraste */
+            background: linear-gradient(45deg, #99c946, #6b8e23);
+            color: #ffffff;
             cursor: pointer;
-            transition: all 0.3s ease-in-out; /* Suaviza la transición de hover */
+            transition: all 0.3s ease-in-out;
         }
-        
+    
         .btn-tertiary:hover {
-            background: linear-gradient(45deg, #6b8e23, #556b2f); /* Degradado más oscuro al pasar el cursor */
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Sombra */
-            color: #ffffff; /* Texto blanco para mejor contraste */
-            transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+            background: linear-gradient(45deg, #6b8e23, #556b2f);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+            transform: scale(1.05);
         }
-
+    
         .btn-quaternary {
-            background-color: #b56eae; /* Morado intermedio */
+            background-color: #b56eae;
             color: #ffffff;
             border: none;
             cursor: pointer;
             transition: all 0.3s ease-in-out;
         }
-
+    
         .btn-quaternary:hover {
-            background-color: #9a4f98; /* Morado más claro */
+            background-color: #9a4f98;
             box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-            color: #ffffff;
             transform: scale(1.05);
         }
-
+    
+        /* Estilo adaptativo para móviles */
         @media (max-width: 650px) {
-            .button-group {
-                flex-direction: column;
+            body {
+                overflow-y: auto; /* Permite desplazarse en móviles */
+                background-attachment: scroll; /* El fondo se mueve en móviles */
+                height: auto; /* Ajusta la altura automáticamente */
             }
+    
+            .floating-form {
+                position: static; /* Elimina el centrado absoluto */
+                transform: none;
+                margin: 20px; /* Agrega margen para separarlo de los bordes */
+            }
+    
+            .button-group {
+                flex-direction: column; /* Botones en columna en pantallas pequeñas */
+            }
+    
             .btn {
-                padding: 35px 40px 35px 40px;
+                padding: 15px 20px;
+                font-size: 16px;
             }
         }
 
