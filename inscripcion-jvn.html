@@ -14,23 +14,21 @@
             background-size: cover;
             background-repeat: no-repeat; /* Evita que la imagen se duplique */
             background-position: center;
-            height: 100vh;
             font-family: Barlow;
+            min-height: 100vh;
             margin: 0;
-            overflow: hidden; /* Evita el scroll */
-            background-attachment: fixed;
+            padding: 0;
+            overflow: auto; /* Permite desplazarse en móviles */
         }
         .form-container {
-            position: absolute; /* Para poder centrar usando top y left */
-            top: 50%; /* Centrado vertical */
-            left: 50%; /* Centrado horizontal */
-            transform: translate(-50%, -50%); /* Ajusta el punto de referencia al centro */
+            margin: 2rem auto;
             width: 90%;
             max-width: 800px;
             background: #ffffff;
             border-radius: 8px;
             padding: 2rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-height: 100%; /* Mantener el tamaño responsivo */
         }
         .header {
             text-align: center;
