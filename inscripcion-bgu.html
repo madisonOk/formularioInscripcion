@@ -10,15 +10,18 @@
     <link rel="stylesheet" href="https://fonts.bitrix24.es/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900">
     <style>
         body {
-            font-family: Barlow;
+            font-family: 'Source Serif Pro', serif;
             background-image: url('https://cdn.bitrix24.es/b15495391/landing/2ec/2ecc046a136783f8eca8ba1c2946a5ac/MADOK-Portada_2x.webp');
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
-            min-height: 100vh; /* Asegura que ocupe al menos toda la ventana */
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: auto; /* Permitir scroll en la página */
         }
         .form-container {
             width: 90%;
