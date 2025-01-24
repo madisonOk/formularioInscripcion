@@ -15,23 +15,20 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
+            min-height: 100vh;
             margin: 0;
             padding: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: auto; /* Permitir scroll en la página */
+            overflow: auto; /* Permite desplazarse en móviles */
         }
         .form-container {
+            margin: 2rem auto;
             width: 90%;
             max-width: 800px;
-            max-height: 90vh; /* Limitar la altura para que sea desplazable */
             background: #ffffff;
             border-radius: 8px;
             padding: 2rem;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow-y: auto; /* Hacer que el formulario sea desplazable si es muy largo */
+            max-height: 100%; /* Mantener el tamaño responsivo */
         }
         .header {
             text-align: center;
@@ -63,20 +60,7 @@
             font-size: 0.9rem;
             color: #6a1b9a;
         }
-        @media (max-width: 768px) {
-            .form-container {
-                padding: 1.5rem;
-            }
-
-            .header h2 {
-                font-size: 1.5rem;
-            }
-
-            .btn-purple {
-                font-size: 0.9rem;
-                padding: 0.6rem;
-            }
-        }
+        
     </style>
 </head>
 <body>
